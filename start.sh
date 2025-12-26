@@ -1,13 +1,13 @@
 #!/bin/bash
-export UUID=${UUID:-'74860533-dfde-4807-b5e5-aee26ddbb4b6'} # 哪吒v1,在不同的平台部署需要改UUID，否则会覆盖
+export UUID=${UUID:-'032be37a-d8c5-4cfb-8541-516d00238ced'} # 哪吒v1,在不同的平台部署需要改UUID，否则会覆盖
 export NEZHA_SERVER=${NEZHA_SERVER:-'v1.wbxl.dpdns.org:10024'}       # v1哪吒填写形式：nezha.abc.com:8008,v0哪吒填写形式：nezha.abc.com
 export NEZHA_PORT=${NEZHA_PORT:-''}           # v1哪吒留空此项,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
 export NEZHA_KEY=${NEZHA_KEY:-'fXYWSXfEZbSHMuGHEhcJjisCWDInLBtR'}             # v1的NZ_CLIENT_SECRET或v0的agent密钥
-export ARGO_DOMAIN=${ARGO_DOMAIN:-'wisp.wbxl00.ggff.net'}         # 固定隧道域名,留空即启用临时隧道
-export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiNTI2NjQ3MGU5ZmZiZmYwMWU1ZmI5Yzk1NjExNjZhZmYiLCJ0IjoiMDM5NGNlMDctMzIzOC00OGZjLWJjNDgtZDNjNjExODZmMmM1IiwicyI6Ik56VmxNVFZsWmpndE4yUXhNUzAwTnpRd0xXRmlPRGd0WVRBNE5qYzJPR1ZoT1dFeSJ9'}             # 固定隧道token或json,留空即启用临时隧道
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'whm.wbxl.dpdns.org'}         # 固定隧道域名,留空即启用临时隧道
+export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiNTI2NjQ3MGU5ZmZiZmYwMWU1ZmI5Yzk1NjExNjZhZmYiLCJ0IjoiNDVkYzg4ZTQtZGRjZS00NjM3LTljMmMtMWU3MTI4NmQ4NTY4IiwicyI6IlpUSTNZemN3T0RFdE5EZG1ZUzAwWVRjd0xUaGpNemt0TTJJMFpURmpNVEJrTlRRMiJ9'}             # 固定隧道token或json,留空即启用临时隧道
 export CFIP=${CFIP:-'cf.877774.xyz'}          # 优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}                # 优选域名或优选ip对应端口 
-export NAME=${NAME:-'wisp'}                   # 节点名称  
+export NAME=${NAME:-'whm'}                   # 节点名称  
 export FILE_PATH=${FILE_PATH:-'./.npm'}       # sub.txt节点保存路径  
 export ARGO_PORT=${ARGO_PORT:-'8001'}         # argo端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
 export CHAT_ID=${CHAT_ID:-''}                 # TG chat_id，可在https://t.me/laowang_serv00_bot 获取
